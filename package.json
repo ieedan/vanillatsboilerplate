@@ -1,0 +1,27 @@
+{
+  "name": "vanillatsboilerplate",
+  "version": "1.0.0",
+  "description": "A project template for Typescript and SCSS boiler plate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npx tsc -w\" \"gulp\"",
+    "test": "jest",
+    "build": "mkdir \".\\build\" & xcopy /s /e /y \".\\public\\*\" \".\\build\\\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^5.1.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "sass": "^1.62.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./public/JS",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true
+  },
+  "include": ["./src/TS/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
