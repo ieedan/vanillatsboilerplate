@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "concurrently \"npx tsc -w\" \"gulp\"",
     "test": "jest",
-    "build": "mkdir \".\\build\" & xcopy /s /e /y \".\\public\\*\" \".\\build\\\""
+    "build": "rd /s /q \".\\build\" & mkdir \".\\build\" & xcopy /s /e /y \".\\public\\*\" \".\\build\\public\\\" & xcopy /s /e /y \".\\node_modules\\*\" \".\\build\\node_modules\\\""
+
   },
   "keywords": [],
   "author": "",
